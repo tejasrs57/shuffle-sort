@@ -1,0 +1,237 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.panel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 16px;
+  align-self: flex-start;
+}
+
+.action-button-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+  margin-top: 16px;
+  align-self: flex-start;
+}
+
+.card {
+  text-align: center;
+  font-size: 3.1rem;
+  opacity: 0.9;
+}
+
+button {
+  border: none;
+  box-shadow: none;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  height: 40px;
+  font-size: 16px;
+  width: 160px;
+  cursor: pointer !important;
+  /* box-shadow: 0px 3px 8px #000000; */
+}
+
+button:focus {
+  border: none;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.text-white {
+  color: white;
+}
+
+.white {
+  background-color: #ffffff;
+}
+
+.black {
+  background-color: #000000;
+}
+
+.first-card {
+  background-color: #6f98a8;
+}
+
+.second-card {
+  background-color: #2b8ead;
+}
+
+.third-card {
+  background-color: #2f454e;
+}
+
+.fourth-card {
+  background-color: #2b8ead;
+}
+
+.fifth-card {
+  background-color: #2f454e;
+}
+
+.sixth-card {
+  background-color: #bfbfbf;
+}
+
+.seventh-card {
+  background-color: #bfbfbf;
+}
+
+.eigth-card {
+  background-color: #6f98a8;
+}
+
+.ningth-card {
+  background-color: #2f454e;
+}
+
+.viking {
+  background-color: #72c3dc;
+}
+
+.gallery {
+  background-color: #efefef;
+}
+
+/* extra large devices */
+@media only screen and (min-width: 1200px) {
+  #cards-container {
+    width: 500px;
+  }
+
+  .card {
+    height: calc(500px / 3);
+    line-height: calc(500px / 3);
+    width: calc(500px / 3);
+  }
+}
+
+/* large devices */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #cards-container {
+    width: 500px;
+  }
+
+  .card {
+    height: calc(500px / 3);
+    line-height: calc(500px / 3);
+    width: calc(500px / 3);
+  }
+}
+
+/* medium devices */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #cards-container {
+    width: 500px;
+  }
+
+  .card {
+    height: calc(500px / 3);
+    line-height: calc(500px / 3);
+    width: calc(500px / 3);
+  }
+}
+
+/* tablets */
+@media only screen and (max-width: 767px) {
+  html,
+  body {
+    height: auto;
+  }
+
+  .panel {
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    background-color: #ffffff;
+  }
+
+  #cards-container {
+    align-self: center;
+    width: 100%;
+  }
+
+  .action-button-container {
+    align-self: center;
+    margin-left: 0px;
+    flex-direction: row;
+  }
+
+  button {
+    margin-right: 4px;
+  }
+
+  .card {
+    height: 48px;
+    line-height: 48px;
+    width: 100%;
+    margin: 8px;
+    color: #000000;
+    font-size: 1.7rem;
+  }
+
+  .first-card {
+    border-left: 8px solid #6f98a8;
+    background-color: #efefef;
+  }
+
+  .second-card {
+    border-left: 8px solid #2b8ead;
+    background-color: #efefef;
+  }
+
+  .third-card {
+    border-left: 8px solid #2f454e;
+    background-color: #efefef;
+  }
+
+  .fourth-card {
+    border-left: 8px solid #2b8ead;
+    background-color: #efefef;
+  }
+
+  .fifth-card {
+    border-left: 8px solid #2f454e;
+    background-color: #efefef;
+  }
+
+  .sixth-card {
+    border-left: 8px solid #bfbfbf;
+    background-color: #efefef;
+  }
+
+  .seventh-card {
+    border-left: 8px solid #bfbfbf;
+    background-color: #efefef;
+  }
+
+  .eigth-card {
+    border-left: 8px solid #6f98a8;
+    background-color: #efefef;
+  }
+
+  .ningth-card {
+    border-left: 8px solid #2f454e;
+    background-color: #efefef;
+  }
+}
